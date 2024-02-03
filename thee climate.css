@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+  }
+
+
+@keyframes color {
+    0%{color: #ff0000;}
+    15%{color: #ff7f00;}
+    30%{color: #ffff00;}
+    45%{color: #40ff00;}
+    60%{color: rgb(0, 238, 255);}
+    75%{color: #0084ff;}
+    90%{color: #8f00ff;}
+    100%{color: #ff2121;}
+}
+
+.text{
+    animation: color 5s infinite;
+    font-family: 'Almarai', sans-serif;
+    font-size: 14px !important;
+background-color: #19191982 !important;
+border-radius: 5px;
+    padding: 10px;
+margin: 3px;
+margin-left: 5px;
+}
+
+
+
+.text:hover{
+    opacity: 50%;
+    transition: all 1s;
+}
+
+.img1{
+    width: 50%;
+    scale: 0.9;
+    scale: 0.8;
+border: #fff solid 4px;
+border-radius: 10px;
+}
+
+
+
+
+
+
+.btn{
+ width: 200px;
+   margin-left: 44%;
+   margin-top: 10%;
+margin-bottom: 30px;
+scale: 1.2;
+animation: infinite nbda 0.5 linear;
+}
+
+.btn:hover{
+    background-color: #0041b2 !important;
+}
+.btn a{
+    text-decoration: none;
+    color: #003436;
+}
+.btn a:focus{
+    color: rgb(0, 0, 0);
+}
+.btn a:hover{
+    color: white;
+}
+
+.box
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0,0,0.5);
+overflow: hidden;
+border-radius: 20px;
+margin-left: 10%;
+padding: 15px;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+}
+
+
+@keyframes animate{
+    
+        0%
+        {
+            transform: rotate(0deg);
+            background: linear-gradient(#ff0000,#ff7f00);
+        }
+        30%{
+            background: linear-gradient(#ffff00,#40ff00);
+    
+        }
+        60%{
+            background: linear-gradient(#0000ff,#4b0082);
+        }
+        90%{
+            background: linear-gradient(#8f00ff,#ff2121);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+        
+    }
+    
+    
+.box::before{
+content: ''; 
+ position: absolute;
+ width: 100px;
+ height: 160%;
+ background: linear-gradient(#00ccff,#d400d4);
+animation: animate 4s linear infinite;
+
+}
+.box h2{
+    color: #fff;
+    position: relative;
+    font-size: medium;
+    z-index: 10;
+    direction:rtl;
+}
+
+.card{
+    margin: 10px !important;
+    padding-top: 5px;
+    transition: all 0.3s;
+    direction:rtl;
+}
+.card:hover{
+    transform: scale(1.15);
+}
+.btn-primary{
+    scale: 1; margin-left: 7px;
+}
+
+
+.row{justify-content: space-around;
+
+    margin: 10px; }
+
+    .navbar-brand {
+        scale: 1;
+    }
+
+    .nck span{
+       scale: 2;
+       background-color: #141414 !important;
+       border-radius: 10px;
+    }
+
+    #carouselExample{
+    height: 100vh;
+    }
+    #phoneimg{
+scale: 0.9;
+padding-left: 90px !important;
+
+
+    }
+    @media (min-width:30px) and (max-width:700px){
+        .text{
+text-align: center;
+background-color: #141414ce !important;
+border-radius: 10px;
+border: black 2px solid;
+margin-right: 20px !important;
+      }
+
+      .bt2{
+        margin-left: 28% !important;
+      }
+      .nck span{
+        scale: 1.4;
+        margin-top: 70px;
+      }
+      #phonediv{
+        height: 200px !important;
+        width: 390px !important;
+        margin-left: 20px !important;
+      }
+
+    #phoneimg{
+display: none;
+    }
+    #phonetext{
+        margin-left: -15px !important;
+        scale: 0.8;
+    }
+    #app2{
+        
+        margin-left: -80px !important;
+        margin-top: -200px !important;
+    }
+                .apps{
+                    scale: 0.5;
+margin-left: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    margin-top: -40px !important;
+                    
+                }
+
+                .inbigdiv a{
+                    
+                   
+                   
+                  margin-left: 120px !important;
+                  margin-top: 20px !important;
+                  
+                 }
+    
+                 .inbigdiv h1{
+    color: #fff;
+   text-align: left !important;
+    padding: 10px;
+    margin-left: 165px !important;
+                  
+                 }
+
+                 .apps{
+                    scale: 40px !important;
+                }
+                .bigdiv{
+                    width: 420px !important;
+
+                 }
+
+                 .con-success{
+                    scale: 1;
+                 }
+                 .navbar-toggler-icon{
+                    margin-right: 20px !important;
+                 }
+.card{
+    margin-left: 13px !important;
+}
+
+        }
+
+        @media (min-width:700px) and (max-width:1000px){
+            .text{
+    text-align: center;
+    background-color: #141414d5 !important;
+    border-radius: 10px;
+    border: black 2px solid;
+          }
+          .bt2{
+            margin-left: 38% !important;
+          }
+          .nck span{
+            scale: 1.4;
+            margin-top: 70px;
+          }
+          #phoneimg{
+display: none;
+        }
+        .text{
+            font-size: 12px !important;
+        }
+        
+        #phonediv{
+            height:300px !important;
+            width: 750px !important;;
+            margin-left: 10px !important;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 60px;
+            
+        }
+        #phonetext{
+
+
+            margin-left: -20px !important;
+        }
+        .apps{
+            margin-left: 20px !important;
+            scale: 0.9;
+        }
+        .inbigdiv a{
+                    
+                   
+                   
+            margin-left: 400px !important;
+            margin-top: 30px;
+            
+           }
+
+           .inbigdiv h1{
+color: #fff;
+text-align: left !important;
+padding: 10px;
+margin-left: 400px !important;
+            
+           }
+           
+
+
+          }
+
+            
+            #phonediv{
+                border: hsl(112, 100%, 18%) 8px solid;
+                height:550px;
+background-color: forestgreen;
+                width:1100px;
+                margin-left: 100px;
+                border-radius: 20px;
+                padding: 20px;
+                margin-top: 50px;
+                
+            }
+             .inbigdiv h1{
+color: #fff;
+text-align: center;
+padding: 10px;
+             }
+             .con-success{
+                position: fixed !important;;
+                bottom: 20px !important;
+                left: 20px !important;
+                scale: 1.1 !important;
+                background-color: forestgreen;
+                border:rgb(27, 105, 27)  2px solid;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 20px;
+                transition: all 1s;
+                animation: alternate nbda 1s infinite;
+
+                
+            }
+             .con-whatsapp{
+              scale: 1.5;
+              color: #fff;
+             }
+             .con-success:hover{
+                background-color: #1b5b06;
+             
+             }
+             #phonetext{
+                color: white;
+                text-align: center;
+margin-top: 10px;
+             }
+             .bigdiv{
+                background-color: #14141496;
+                height: 530px;
+             }
+
+             .inbigdiv a{
+                display: flex !important;
+                flex-wrap: wrap !important;
+                flex-direction: column !important;
+                color: #fff;
+                font-size: 25px;
+                margin-left: 570px;
+                margin-top: 20px;
+                text-decoration: none;
+                transition: all 0.5;
+             }
+
+             @keyframes nbda{
+    
+                0%
+                {
+                    transform: scale(1);
+                }
+ 100%{
+transform: scale(0.5);
+ }
+                
+            }
+
